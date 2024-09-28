@@ -1,8 +1,8 @@
-<html><head><base href="https://linkmedia.com.br/">
+<html><head><base href="https://linkmedia.com.br/solucoes">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Linkmedia - Plataforma de Gestão de Atendimento</title>
-<meta name="description" content="Linkmedia: A plataforma de gestão de atendimento mais avançada do mercado. Soluções modulares para transformar sua experiência de atendimento ao cliente.">
+<title>Soluções Linkmedia - Plataforma Modular de Gestão de Atendimento</title>
+<meta name="description" content="Conheça as soluções modulares da Linkmedia para otimizar seu atendimento ao cliente. Gestão de filas, chatbot com IA, agendamento web e muito mais.">
 <style>
 :root {
   --acquamarine: #3BD1D6;
@@ -95,21 +95,6 @@ nav {
   margin: 0 auto 2rem;
 }
 
-.cta-button {
-  display: inline-block;
-  background-color: var(--cobre);
-  color: var(--branco);
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #9A4A2B;
-}
-
 .solutions {
   padding: 4rem 0;
   background-color: var(--branco);
@@ -121,16 +106,16 @@ nav {
   color: var(--azul-linkmedia);
 }
 
-.solutions-grid {
+.solution-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
 .solution-card {
   background-color: var(--offwhite);
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -141,77 +126,91 @@ nav {
 }
 
 .solution-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 1rem;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
 }
 
 .solution-card h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--azul-linkmedia);
+  font-size: 1.5rem;
 }
 
-.benefits {
+.solution-card p {
+  margin-bottom: 1.5rem;
+}
+
+.learn-more {
+  display: inline-block;
+  background-color: var(--cobre);
+  color: var(--branco);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #9A4A2B;
+}
+
+.integration {
   background-color: var(--offwhite);
   padding: 4rem 0;
-}
-
-.benefits h2 {
   text-align: center;
-  margin-bottom: 2rem;
-  color: var(--azul-linkmedia);
 }
 
-.benefits-list {
+.integration h2 {
+  color: var(--azul-linkmedia);
+  margin-bottom: 2rem;
+}
+
+.integration-logos {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-}
-
-.benefit-item {
-  flex-basis: calc(33.333% - 2rem);
-  margin: 1rem;
-  text-align: center;
-}
-
-.benefit-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1rem;
-}
-
-.testimonials {
-  background-color: var(--branco);
-  padding: 4rem 0;
-}
-
-.testimonials h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: var(--azul-linkmedia);
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
-.testimonial-card {
-  background-color: var(--offwhite);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+.integration-logo {
+  width: 100px;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
 
-.testimonial-text {
-  font-style: italic;
-  margin-bottom: 1rem;
+.integration-logo:hover {
+  opacity: 1;
 }
 
-.testimonial-author {
-  font-weight: bold;
+.cta {
+  background: linear-gradient(135deg, var(--cobre), var(--azul-linkmedia));
+  color: var(--branco);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--branco);
   color: var(--azul-linkmedia);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--acquamarine);
+  color: var(--branco);
 }
 
 footer {
@@ -250,8 +249,8 @@ footer {
     font-size: 1rem;
   }
   
-  .benefit-item {
-    flex-basis: 100%;
+  .solution-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -276,16 +275,15 @@ footer {
   <main>
     <section class="hero">
       <div class="container">
-        <h1>A plataforma de gestão de atendimento mais avançada do mercado</h1>
-        <p>Transforme a experiência do seu cliente com nossas soluções modulares e inovadoras</p>
-        <a href="/demonstracao" class="cta-button">Agende uma Demonstração</a>
+        <h1>Soluções Modulares Linkmedia</h1>
+        <p>Transforme seu atendimento com nossa plataforma flexível e inovadora</p>
       </div>
     </section>
 
     <section class="solutions">
       <div class="container">
-        <h2>Soluções</h2>
-        <div class="solutions-grid">
+        <h2>Nossas Soluções</h2>
+        <div class="solution-grid">
           <div class="solution-card">
             <svg class="solution-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#3BD1D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -294,14 +292,16 @@ footer {
               <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#3BD1D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <h3>Gestão de Filas</h3>
-            <p>Otimize o fluxo de atendimento e reduza o tempo de espera</p>
+            <p>Otimize o fluxo de atendimento, reduza o tempo de espera e melhore a experiência do cliente com nossa solução inteligente de gerenciamento de filas.</p>
+            <a href="/solucoes/gestao-de-filas" class="learn-more">Saiba mais</a>
           </div>
           <div class="solution-card">
             <svg class="solution-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <h3>Chatbot com IA</h3>
-            <p>Atendimento automático 24/7 com inteligência artificial</p>
+            <p>Ofereça atendimento automático 24/7 com nosso chatbot alimentado por inteligência artificial, capaz de lidar com consultas complexas e aprender continuamente.</p>
+            <a href="/solucoes/chatbot-ia" class="learn-more">Saiba mais</a>
           </div>
           <div class="solution-card">
             <svg class="solution-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +311,8 @@ footer {
               <path d="M3 10H21" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <h3>Agendamento Web</h3>
-            <p>Facilite o agendamento de serviços e consultas online</p>
+            <p>Simplifique o processo de agendamento de serviços e consultas com nossa plataforma intuitiva de agendamento online, integrável ao seu site e sistemas existentes.</p>
+            <a href="/solucoes/agendamento-web" class="learn-more">Saiba mais</a>
           </div>
           <div class="solution-card">
             <svg class="solution-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -319,62 +320,50 @@ footer {
               <path d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="#3BD1D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <h3>Vídeo Atendimento</h3>
-            <p>Atendimento personalizado à distância com qualidade HD</p>
+            <p>Ofereça atendimento personalizado à distância com nossa solução de vídeo atendimento em alta definição, permitindo interações face-a-face mesmo remotamente.</p>
+            <a href="/solucoes/video-atendimento" class="learn-more">Saiba mais</a>
+          </div>
+          <div class="solution-card">
+            <svg class="solution-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 4L12 14.01L9 11.01" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Pesquisa de Satisfação</h3>
+            <p>Capture feedbacks valiosos dos clientes com nossa ferramenta de pesquisa de satisfação, permitindo melhorias contínuas no atendimento.</p>
+            <a href="/solucoes/pesquisa-satisfacao" class="learn-more">Saiba mais</a>
+          </div>
+          <div class="solution-card">
+            <svg class="solution-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 20V10" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 20V4" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 20V16" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Analytics e Relatórios</h3>
+            <p>Obtenha insights poderosos sobre o desempenho do seu atendimento com nossa solução de analytics e relatórios personalizáveis.</p>
+            <a href="/solucoes/analytics-relatorios" class="learn-more">Saiba mais</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="benefits">
+    <section class="integration">
       <div class="container">
-        <h2>Benefícios da Linkmedia</h2>
-        <div class="benefits-list">
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 12H18L15 21L9 3L6 12H2" stroke="#3BD1D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <h3>Aumento de Produtividade</h3>
-            <p>Otimize processos e melhore a eficiência do atendimento</p>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12 17H12.01" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <h3>Suporte Especializado</h3>
-            <p>Conte com nossa equipe de experts para implementação e suporte</p>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M3.27002 6.96L12 12.01L20.73 6.96" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12 22.08V12" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <h3>Soluções Modulares</h3>
-            <p>Escolha os módulos que melhor se adaptam ao seu negócio</p>
-          </div>
+        <h2>Integração com suas ferramentas favoritas</h2>
+        <div class="integration-logos">
+          <img src="path/to/salesforce-logo.svg" alt="Salesforce logo" class="integration-logo">
+          <img src="path/to/zendesk-logo.svg" alt="Zendesk logo" class="integration-logo">
+          <img src="path/to/hubspot-logo.svg" alt="HubSpot logo" class="integration-logo">
+          <img src="path/to/microsoft-dynamics-logo.svg" alt="Microsoft Dynamics logo" class="integration-logo">
+          <img src="path/to/sap-logo.svg" alt="SAP logo" class="integration-logo">
         </div>
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="cta">
       <div class="container">
-        <h2>O que nossos clientes dizem</h2>
-        <div class="testimonial-grid">
-          <div class="testimonial-card">
-            <p class="testimonial-text">"A Linkmedia revolucionou nosso atendimento ao cliente. A produtividade aumentou em 30% e a satisfação do cliente melhorou significativamente."</p>
-            <p class="testimonial-author">- Maria Silva, Gerente de Atendimento</p>
-          </div>
-          <div class="testimonial-card">
-            <p class="testimonial-text">"O chatbot com IA da Linkmedia nos permitiu oferecer suporte 24/7, reduzindo drasticamente nosso tempo de resposta."</p>
-            <p class="testimonial-author">- João Santos, Diretor de Operações</p>
-          </div>
-          <div class="testimonial-card">
-            <p class="testimonial-text">"A flexibilidade das soluções modulares da Linkmedia nos permitiu personalizar o sistema exatamente como precisávamos."</p>
-            <p class="testimonial-author">- Ana Oliveira, CTO</p>
-          </div>
-        </div>
+        <h2>Pronto para transformar seu atendimento?</h2>
+        <p>Entre em contato conosco e descubra como a Linkmedia pode impulsionar sua eficiência e satisfação do cliente.</p>
+        <a href="/demonstracao" class="cta-button">Agende uma Demonstração</a>
       </div>
     </section>
   </main>
@@ -383,7 +372,6 @@ footer {
     <div class="container">
       <ul class="footer-links">
         <li><a href="/politica-privacidade">Política de Privacidade</a></li>
-        <li><a href="/politica-anticorrupcao">Política Anticorrupção</a></li>
         <li><a href="/termos-de-uso">Termos de Uso</a></li>
         <li><a href="/contato">Contato</a></li>
       </ul>
@@ -402,7 +390,7 @@ footer {
         });
       });
 
-      const elements = document.querySelectorAll('.solution-card, .benefit-item, .testimonial-card');
+      const elements = document.querySelectorAll('.solution-card, .integration-logo');
       elements.forEach((el) => observer.observe(el));
     });
 

@@ -1,0 +1,433 @@
+<html><head><base href="https://linkmedia.com.br/blog">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Linkmedia</title>
+<meta name="description" content="Fique por dentro das últimas tendências em tecnologia, atendimento ao cliente e inovação no Blog da Linkmedia. Artigos, dicas e insights para sua empresa.">
+<style>
+:root {
+  --acquamarine: #3BD1D6;
+  --azul-linkmedia: #000E40;
+  --offwhite: #F1F2EE;
+  --branco: #FFFFFF;
+  --cobre: #B55635;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--azul-linkmedia);
+  background-color: var(--offwhite);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--branco);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--azul-linkmedia);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--acquamarine);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--azul-linkmedia), var(--acquamarine));
+  color: var(--branco);
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.blog-card {
+  background-color: var(--branco);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1.5rem;
+}
+
+.blog-content h3 {
+  color: var(--azul-linkmedia);
+  margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: var(--acquamarine);
+  color: var(--azul-linkmedia);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #2ABBC0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination a {
+  color: var(--azul-linkmedia);
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: var(--acquamarine);
+  color: white;
+  border: 1px solid var(--acquamarine);
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+footer {
+  background-color: var(--azul-linkmedia);
+  color: var(--branco);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  margin: 0 1rem;
+}
+
+.footer-links a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.search-container button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: var(--acquamarine);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #2ABBC0;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+  .search-container input[type=text], .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .search-container input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--azul-linkmedia);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--branco);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="/a/7399ee64-151e-47c6-a5bd-a0ecb4b0701d" alt="Linkmedia Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre">Sobre Nós</a></li>
+        <li><a href="/solucoes">Soluções</a></li>
+        <li><a href="/casos-de-sucesso">Casos de Sucesso</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Blog Linkmedia</h1>
+        <p>Fique por dentro das últimas tendências em tecnologia, atendimento ao cliente e inovação</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="search-container">
+        <input type="text" placeholder="Pesquisar no blog..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </section>
+
+    <section class="blog-grid container">
+      <article class="blog-card">
+        <img src="https://source.unsplash.com/random/600x400?technology" alt="Tecnologia futurista" class="blog-image">
+        <div class="blog-content">
+          <h3>O Futuro do Atendimento ao Cliente com IA</h3>
+          <p>Descubra como a Inteligência Artificial está revolucionando o atendimento ao cliente e melhorando a experiência do usuário.</p>
+          <a href="/blog/futuro-atendimento-cliente-ia" class="read-more">Leia mais</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="https://source.unsplash.com/random/600x400?customer-service" alt="Atendimento ao cliente" class="blog-image">
+        <div class="blog-content">
+          <h3>5 Estratégias para Melhorar o Engajamento do Cliente</h3>
+          <p>Aprenda técnicas eficazes para aumentar o engajamento e a fidelidade dos seus clientes.</p>
+          <a href="/blog/estrategias-engajamento-cliente" class="read-more">Leia mais</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="https://source.unsplash.com/random/600x400?data-analytics" alt="Análise de dados" class="blog-image">
+        <div class="blog-content">
+          <h3>Como Usar Análise de Dados para Otimizar o Atendimento</h3>
+          <p>Explore as melhores práticas para utilizar dados e métricas na melhoria contínua do seu serviço de atendimento.</p>
+          <a href="/blog/analise-dados-otimizacao-atendimento" class="read-more">Leia mais</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="https://source.unsplash.com/random/600x400?automation" alt="Automação de processos" class="blog-image">
+        <div class="blog-content">
+          <h3>Automação de Processos: Por Onde Começar?</h3>
+          <p>Um guia prático para implementar a automação em sua empresa e aumentar a eficiência operacional.</p>
+          <a href="/blog/automacao-processos-guia-inicial" class="read-more">Leia mais</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="https://source.unsplash.com/random/600x400?omnichannel" alt="Atendimento omnichannel" class="blog-image">
+        <div class="blog-content">
+          <h3>A Importância da Estratégia Omnichannel</h3>
+          <p>Entenda por que uma abordagem omnichannel é crucial para oferecer uma experiência de cliente excepcional.</p>
+          <a href="/blog/importancia-estrategia-omnichannel" class="read-more">Leia mais</a>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="https://source.unsplash.com/random/600x400?chatbot" alt="Chatbot interativo" class="blog-image">
+        <div class="blog-content">
+          <h3>Chatbots: Melhores Práticas para Implementação</h3>
+          <p>Dicas e estratégias para implementar chatbots eficientes que melhoram o atendimento e reduzem custos.</p>
+          <a href="/blog/chatbots-melhores-praticas-implementacao" class="read-more">Leia mais</a>
+        </div>
+      </article>
+    </section>
+
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="/politica-privacidade">Política de Privacidade</a></li>
+        <li><a href="/politica-anticorrupcao">Política Anticorrupção</a></li>
+        <li><a href="/termos-de-uso">Termos de Uso</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+      <p>&copy; 2023 Linkmedia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Adicione funcionalidade de menu responsivo
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '&#9776;';
+    menuToggle.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    document.querySelector('nav').appendChild(menuToggle);
+
+    // Simulação de funcionalidade de pesquisa
+    const searchForm = document.querySelector('.search-container');
+    searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const searchTerm = e.target.querySelector('input[type="text"]').value;
+      alert(`Você pesquisou por: ${searchTerm}`);
+      // Aqui você implementaria a lógica real de pesquisa
+    });
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</body>
+</html>

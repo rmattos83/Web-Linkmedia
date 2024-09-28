@@ -1,0 +1,380 @@
+<html><head><base href="https://linkmedia.com.br/sobre">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre a Linkmedia - Inovação em Gestão de Atendimento</title>
+<meta name="description" content="Conheça a história, missão e valores da Linkmedia. Descubra como nossa plataforma está revolucionando a gestão de atendimento com soluções inovadoras.">
+<style>
+:root {
+  --acquamarine: #3BD1D6;
+  --azul-linkmedia: #000E40;
+  --offwhite: #F1F2EE;
+  --branco: #FFFFFF;
+  --cobre: #B55635;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--azul-linkmedia);
+  background-color: var(--offwhite);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--branco);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--azul-linkmedia);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--acquamarine);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--azul-linkmedia), var(--acquamarine));
+  color: var(--branco);
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.about-section {
+  padding: 4rem 0;
+  background-color: var(--branco);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-content h2 {
+  color: var(--azul-linkmedia);
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mission-values {
+  background-color: var(--offwhite);
+  padding: 4rem 0;
+}
+
+.mission-values h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--azul-linkmedia);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background-color: var(--branco);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+}
+
+.value-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--azul-linkmedia);
+}
+
+footer {
+  background-color: var(--azul-linkmedia);
+  color: var(--branco);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  margin: 0 1rem;
+}
+
+.footer-links a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    order: -1;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--azul-linkmedia);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--branco);
+    flex-direction: column;
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="/a/7399ee64-151e-47c6-a5bd-a0ecb4b0701d" alt="Linkmedia Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre">Sobre Nós</a></li>
+        <li><a href="/solucoes">Soluções</a></li>
+        <li><a href="/casos-de-sucesso">Casos de Sucesso</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+      <button class="menu-toggle">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Sobre a Linkmedia</h1>
+        <p>Conheça nossa história de inovação e compromisso com a excelência em gestão de atendimento</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>Nossa História</h2>
+            <p>A Linkmedia nasceu em 2005 com uma visão clara: revolucionar a forma como as empresas gerenciam seus atendimentos. Fundada por um grupo de empreendedores apaixonados por tecnologia e experiência do cliente, nossa jornada começou com o desenvolvimento de soluções inovadoras para otimizar processos de atendimento.</p>
+            <p>Ao longo dos anos, expandimos nossa plataforma, incorporando inteligência artificial, análise de dados avançada e integração omnichannel. Hoje, orgulhamo-nos de ser líderes no mercado de gestão de atendimento, oferecendo soluções modulares que se adaptam às necessidades específicas de cada cliente.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://linkmedia.com.br/images/office.jpg" alt="Escritório da Linkmedia" width="500" height="300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-values">
+      <div class="container">
+        <h2>Nossa Missão e Valores</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <svg class="value-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 12H18L15 21L9 3L6 12H2" stroke="#3BD1D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Inovação Constante</h3>
+            <p>Buscamos sempre estar à frente, desenvolvendo soluções que antecipam as necessidades do mercado.</p>
+          </div>
+          <div class="value-card">
+            <svg class="value-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#B55635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Foco no Cliente</h3>
+            <p>O sucesso de nossos clientes é nossa prioridade. Trabalhamos incansavelmente para superar suas expectativas.</p>
+          </div>
+          <div class="value-card">
+            <svg class="value-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12H22" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z" stroke="#000E40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Excelência Tecnológica</h3>
+            <p>Comprometidos com o desenvolvimento de tecnologias de ponta para oferecer as melhores soluções do mercado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="/politica-privacidade">Política de Privacidade</a></li>
+        <li><a href="/termos-de-uso">Termos de Uso</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+      <p>&copy; 2023 Linkmedia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Adicione animações suaves ao rolar
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+          }
+        });
+      });
+
+      const elements = document.querySelectorAll('.value-card, .about-content, .about-image');
+      elements.forEach((el) => observer.observe(el));
+    });
+
+    // Adicione funcionalidade de menu responsivo
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</body>
+</html>
