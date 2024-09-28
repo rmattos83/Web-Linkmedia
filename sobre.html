@@ -1,0 +1,330 @@
+<html><head><base href="https://linkmedia.com.br/sobre">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nós - Linkmedia</title>
+<meta name="description" content="Conheça a Linkmedia: líder em soluções de gestão de atendimento. Nossa história, missão e valores que impulsionam a inovação no atendimento ao cliente.">
+<style>
+:root {
+  --acquamarine: #3BD1D6;
+  --azul-linkmedia: #000E40;
+  --offwhite: #F1F2EE;
+  --branco: #FFFFFF;
+  --cobre: #B55635;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--azul-linkmedia);
+  background-color: var(--offwhite);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--branco);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--azul-linkmedia);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--acquamarine);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--azul-linkmedia), var(--acquamarine));
+  color: var(--branco);
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.about-content {
+  padding: 4rem 0;
+  background-color: var(--branco);
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  color: var(--azul-linkmedia);
+  margin-bottom: 1rem;
+}
+
+.mission-values {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mission, .values {
+  flex-basis: calc(50% - 1rem);
+  background-color: var(--offwhite);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.values ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.values li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.values li::before {
+  content: "•";
+  color: var(--acquamarine);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  background-color: var(--azul-linkmedia);
+  color: var(--branco);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  margin: 0 1rem;
+}
+
+.footer-links a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .mission, .values {
+    flex-basis: 100%;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--azul-linkmedia);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--branco);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="/a/7399ee64-151e-47c6-a5bd-a0ecb4b0701d" alt="Linkmedia Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre">Sobre Nós</a></li>
+        <li><a href="/solucoes">Soluções</a></li>
+        <li><a href="/casos-de-sucesso">Casos de Sucesso</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Sobre a Linkmedia</h1>
+        <p>Conheça nossa história e os valores que nos impulsionam a inovar no atendimento ao cliente</p>
+      </div>
+    </section>
+
+    <section class="about-content">
+      <div class="container">
+        <div class="about-section">
+          <h2>Nossa História</h2>
+          <p>A Linkmedia nasceu em 2005 com uma visão clara: revolucionar a forma como as empresas se comunicam e atendem seus clientes. Fundada por um grupo de empreendedores apaixonados por tecnologia e experiência do cliente, nossa empresa rapidamente se tornou referência em soluções inovadoras de gestão de atendimento.</p>
+          <p>Ao longo dos anos, expandimos nossa oferta de produtos, sempre mantendo o foco na qualidade e na satisfação do cliente. Hoje, orgulhamo-nos de atender empresas de diversos setores, ajudando-as a elevar seus padrões de atendimento e a construir relacionamentos duradouros com seus clientes.</p>
+        </div>
+
+        <div class="about-section mission-values">
+          <div class="mission">
+            <h2>Nossa Missão</h2>
+            <p>Capacitar empresas com tecnologia de ponta para que ofereçam experiências de atendimento excepcionais, promovendo conexões significativas entre marcas e clientes.</p>
+          </div>
+          <div class="values">
+            <h2>Nossos Valores</h2>
+            <ul>
+              <li>Inovação constante</li>
+              <li>Excelência no atendimento</li>
+              <li>Colaboração e trabalho em equipe</li>
+              <li>Integridade e transparência</li>
+              <li>Compromisso com o sucesso do cliente</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="/politica-privacidade">Política de Privacidade</a></li>
+        <li><a href="/politica-anticorrupcao">Política Anticorrupção</a></li>
+        <li><a href="/termos-de-uso">Termos de Uso</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+      <p>&copy; 2023 Linkmedia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Adicione animações suaves ao rolar
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+          }
+        });
+      });
+
+      const elements = document.querySelectorAll('.about-section');
+      elements.forEach((el) => observer.observe(el));
+    });
+
+    // Adicione funcionalidade de menu responsivo
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '&#9776;';
+    menuToggle.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    document.querySelector('nav').appendChild(menuToggle);
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</body>
+</html>
