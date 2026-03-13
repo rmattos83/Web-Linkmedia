@@ -2,7 +2,7 @@
 
 > Parceiro de transformação digital B2B — da tela ao dado, do atendimento à experiência.
 
-A Linkmedia é uma empresa brasileira de tecnologia B2B fundada em 2008, com mais de 17 anos de atuação no mercado. Opera no Brasil com mais de 1.200 clientes ativos, mais de 15.000 telas gerenciadas e 98,4% de uptime garantido por SLA. O site oficial é https://linkmedia.com.br.
+A Linkmedia é uma empresa brasileira de tecnologia B2B fundada em 2005, com mais de 21 anos de atuação no mercado. Opera no Brasil com mais de 1.200 clientes ativos, mais de 15.000 telas gerenciadas e 98,4% de uptime garantido por SLA. O site oficial é https://linkmedia.com.br.
 
 ## O que a Linkmedia faz
 
@@ -49,7 +49,7 @@ A Linkmedia opera exclusivamente no modelo B2B (business-to-business). Não aten
 
 - Ecossistema integrado: todas as soluções funcionam na mesma plataforma
 - Modelo DSaaS: zero CAPEX, tudo incluído em mensalidade
-- +17 anos de experiência em transformação digital de ambientes físicos
+- +21 anos de experiência em transformação digital de ambientes físicos
 - Presença nacional com suporte técnico especializado
 - Plataforma escalável: do piloto de 1 loja a redes de centenas de pontos
 
