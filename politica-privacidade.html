@@ -1,352 +1,146 @@
-<html><head><base href="https://linkmedia.com.br/politica-privacidade">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Privacidade - Linkmedia</title>
-<meta name="description" content="Conheça nossa Política de Privacidade atualizada em Novembro de 2023. Saiba como a Linkmedia protege e utiliza seus dados pessoais em conformidade com a LGPD.">
+<title>Política de Privacidade | Linkmedia Tecnologia</title>
+<meta name="description" content="Política de Privacidade da Linkmedia Tecnologia. Saiba como coletamos, usamos e protegemos seus dados pessoais em conformidade com a LGPD.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://linkmedia.com.br/politica-privacidade.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root {
-  --acquamarine: #3BD1D6;
-  --azul-linkmedia: #000E40;
-  --offwhite: #F1F2EE;
-  --branco: #FFFFFF;
-  --cobre: #B55635;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: var(--azul-linkmedia);
-  background-color: var(--offwhite);
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-header {
-  background-color: var(--branco);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 150px;
-  height: auto;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin-left: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--azul-linkmedia);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--acquamarine);
-}
-
-.hero {
-  background: linear-gradient(135deg, var(--azul-linkmedia), var(--acquamarine));
-  color: var(--branco);
-  padding: 8rem 0 4rem;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.policy-content {
-  background-color: var(--branco);
-  padding: 4rem 0;
-}
-
-.policy-section {
-  margin-bottom: 2rem;
-}
-
-.policy-section h2 {
-  color: var(--azul-linkmedia);
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-}
-
-.policy-section p, .policy-section ul {
-  margin-bottom: 1rem;
-}
-
-.policy-section ul {
-  padding-left: 2rem;
-}
-
-footer {
-  background-color: var(--azul-linkmedia);
-  color: var(--branco);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-.footer-links li {
-  margin: 0 1rem;
-}
-
-.footer-links a {
-  color: var(--branco);
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--azul-linkmedia);
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--branco);
-    flex-direction: column;
-    padding: 1rem 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 0.5rem 0;
-  }
-}
+:root{--bg:#040810;--surface:#080f1e;--card:#0c1428;--border:#1a2540;--cyan:#00d2d3;--blue:#1e56d9;--text:#e8edf8;--muted:#7a8aaa;--grad:linear-gradient(135deg,#00d2d3,#1e56d9);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.75;}
+a{color:var(--cyan);}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(4,8,16,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;}
+.topbar-logo{font-size:18px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;}
+.topbar-back{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s;}
+.topbar-back:hover{color:var(--text);}
+.hero{margin-top:64px;padding:56px 32px 40px;background:linear-gradient(180deg,#0a1428,var(--bg));border-bottom:1px solid var(--border);text-align:center;}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(0,210,211,.1);color:var(--cyan);border:1px solid rgba(0,210,211,.2);border-radius:20px;padding:4px 14px;margin-bottom:16px;}
+.hero h1{font-size:clamp(24px,4vw,40px);font-weight:800;margin-bottom:10px;}
+.hero p{color:var(--muted);font-size:14px;}
+.content{max-width:760px;margin:0 auto;padding:56px 32px 80px;}
+.content h2{font-size:20px;font-weight:800;margin:40px 0 12px;padding-top:40px;border-top:1px solid var(--border);}
+.content h2:first-child{border-top:none;margin-top:0;padding-top:0;}
+.content h3{font-size:16px;font-weight:700;margin:24px 0 8px;color:var(--text);}
+.content p{margin-bottom:16px;color:#c8d4e8;}
+.content ul{margin:0 0 20px 24px;color:#c8d4e8;}
+.content li{margin-bottom:6px;}
+.content strong{color:var(--text);font-weight:700;}
+.update{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:40px;font-size:13px;color:var(--muted);}
+.contact-box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin-top:48px;text-align:center;}
+.contact-box h3{font-size:18px;font-weight:800;margin-bottom:10px;}
+.contact-box p{color:var(--muted);font-size:14px;margin-bottom:20px;}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;transition:opacity .2s;}
+.btn:hover{opacity:.85;}
+footer{border-top:1px solid var(--border);padding:32px;text-align:center;font-size:13px;color:var(--muted);}
+footer a{color:var(--muted);}
+footer a:hover{color:var(--cyan);}
 </style>
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <div class="logo">
-        <img src="/8273b58b-249e-4c74-8cc4-6d1f02177609.png" alt="Linkmedia Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/sobre">Sobre Nós</a></li>
-        <li><a href="/solucoes">Soluções</a></li>
-        <li><a href="/casos-de-sucesso">Casos de Sucesso</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contato">Contato</a></li>
-      </ul>
-      <button class="menu-toggle">&#9776;</button>
-    </nav>
-  </header>
+<nav class="topbar">
+  <a href="/" class="topbar-logo">Linkmedia</a>
+  <a href="/" class="topbar-back">← Voltar ao site</a>
+</nav>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Política de Privacidade - Linkmedia</h1>
-        <p>Última atualização: Novembro de 2023</p>
-      </div>
-    </section>
+<header class="hero">
+  <span class="tag">Documentos Legais</span>
+  <h1>Política de Privacidade</h1>
+  <p>Linkmedia Tecnologia · LGPD · Última atualização: março de 2026</p>
+</header>
 
-    <section class="policy-content">
-      <div class="container">
-        <div class="policy-section">
-          <p>Na Linkmedia, respeitamos sua privacidade e estamos comprometidos em proteger seus dados pessoais. Esta Política de Privacidade descreve como coletamos, usamos, compartilhamos e protegemos suas informações ao utilizar nossos serviços e plataformas.</p>
-        </div>
+<main class="content">
+  <div class="update">
+    <strong>Última atualização:</strong> 12 de março de 2026. Esta política substitui todas as versões anteriores.
+  </div>
 
-        <div class="policy-section">
-          <h2>1. Informações Coletadas e Motivo da Coleta</h2>
-          <p>Coletamos dados pessoais para fornecer nossos serviços de maneira eficaz e personalizada. As informações coletadas podem incluir:</p>
-          
-          <h3>1.1 Dados Fornecidos pelo Usuário</h3>
-          <ul>
-            <li>Nome, CPF ou CNPJ, telefone, e-mail, data de nascimento e gênero.</li>
-            <li>Foto de perfil (opcional), histórico de utilização da plataforma e interações.</li>
-            <li>Esses dados são fornecidos no momento do cadastro ou em interações com nossos serviços.</li>
-          </ul>
-          
-          <h3>1.2 Dados Coletados Automaticamente</h3>
-          <p>Podemos coletar informações sobre o uso da plataforma, como dados de navegação, dispositivo utilizado, endereço IP, data e hora de acesso, e cookies.</p>
-          
-          <h3>Finalidade da Coleta de Dados</h3>
-          <p>As informações coletadas são utilizadas para:</p>
-          <ul>
-            <li>Prover acesso à plataforma e às suas funcionalidades, como gerenciamento de filas e agendamentos.</li>
-            <li>Oferecer suporte técnico e melhorar a experiência do usuário.</li>
-            <li>Cumprir obrigações legais e regulatórias aplicáveis.</li>
-          </ul>
-        </div>
+  <h2>1. Quem somos</h2>
+  <p>A <strong>Linkmedia Tecnologia</strong> é uma empresa brasileira de tecnologia B2B, parceira de transformação digital com soluções de Digital Signage, Gestão de Atendimento, Agentes de IA, Rádio Indoor, Totens Interativos, Analytics e Plataforma CX Unificada. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos os dados pessoais de nossos clientes, parceiros, visitantes do site e usuários de nossas soluções, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
 
-        <div class="policy-section">
-          <h2>2. Uso e Compartilhamento de Informações</h2>
-          <p>Utilizamos seus dados pessoais para otimizar a prestação de nossos serviços, como:</p>
-          <ul>
-            <li>Gerenciamento de filas, agendamentos e personalização de atendimento.</li>
-            <li>Comunicação com nossos usuários para questões relacionadas à sua conta ou uso da plataforma.</li>
-            <li>Melhoria contínua da experiência de usuário com base em suas interações.</li>
-          </ul>
-          
-          <h3>Compartilhamento de Dados com Terceiros</h3>
-          <p>Compartilhamos dados pessoais com terceiros em circunstâncias específicas, como:</p>
-          <ul>
-            <li>Parceiros de negócios, como estabelecimentos que utilizam nossa plataforma para controle de filas ou agendamentos.</li>
-            <li>Provedores de serviços de armazenamento em nuvem e infraestrutura de TI, como Amazon Web Services (AWS) e Google Cloud, para assegurar a segurança e operação da plataforma.</li>
-          </ul>
-          <p>Os dados são compartilhados estritamente conforme as finalidades previstas nesta política, sempre em conformidade com as leis de proteção de dados.</p>
-        </div>
+  <h2>2. Dados que coletamos</h2>
+  <h3>2.1 Dados fornecidos diretamente por você</h3>
+  <ul>
+    <li>Nome completo e cargo</li>
+    <li>E-mail corporativo e telefone</li>
+    <li>Empresa, setor de atuação e porte</li>
+    <li>Mensagens enviadas via formulário de contato ou WhatsApp</li>
+  </ul>
+  <h3>2.2 Dados coletados automaticamente</h3>
+  <ul>
+    <li>Endereço IP e localização aproximada</li>
+    <li>Tipo de dispositivo, navegador e sistema operacional</li>
+    <li>Páginas acessadas, tempo de permanência e origem do acesso</li>
+    <li>Cookies de navegação e preferências de sessão</li>
+  </ul>
+  <h3>2.3 Dados de usuários das nossas soluções</h3>
+  <p>Quando operamos soluções para nossos clientes corporativos (como sistemas de gestão de filas, totens interativos ou agentes de IA), podemos processar dados dos usuários finais dessas soluções (pacientes, consumidores, alunos) exclusivamente na condição de <strong>operadores de dados</strong>, em nome e sob as instruções do nosso cliente (o controlador). Nesses casos, a política de privacidade do nosso cliente é a principal referência para os usuários finais.</p>
 
-        <div class="policy-section">
-          <h2>3. Segurança e Armazenamento dos Dados</h2>
-          <p>Adotamos rigorosas medidas de segurança para proteger seus dados pessoais contra acessos não autorizados, vazamentos ou destruição acidental. Utilizamos tecnologias como criptografia, controle de acesso, e monitoramento contínuo para garantir a integridade e confidencialidade das informações.</p>
-          
-          <h3>Período de Armazenamento</h3>
-          <p>Manteremos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas nesta política, salvo quando exigido por obrigações legais. Após esse período, os dados serão excluídos ou anonimizados.</p>
-        </div>
+  <h2>3. Como usamos seus dados</h2>
+  <ul>
+    <li><strong>Responder a solicitações comerciais</strong> e enviar propostas personalizadas</li>
+    <li><strong>Executar contratos</strong> com clientes e parceiros</li>
+    <li><strong>Enviar comunicações relevantes</strong> sobre nossas soluções, cases e conteúdo educativo (com possibilidade de descadastramento a qualquer momento)</li>
+    <li><strong>Melhorar nossos produtos e serviços</strong> com base em análise de uso agregada e anonimizada</li>
+    <li><strong>Cumprir obrigações legais</strong> e regulatórias aplicáveis</li>
+    <li><strong>Prevenir fraudes</strong> e garantir a segurança das nossas plataformas</li>
+  </ul>
 
-        <div class="policy-section">
-          <h2>4. Direitos do Usuário</h2>
-          <p>Você, como titular dos dados, tem direitos garantidos pela Lei Geral de Proteção de Dados (LGPD), incluindo:</p>
-          <ul>
-            <li>Acesso: Solicitar informações sobre os dados pessoais que armazenamos.</li>
-            <li>Correção: Atualizar ou corrigir dados incompletos ou incorretos.</li>
-            <li>Eliminação: Solicitar a exclusão de dados quando não forem mais necessários para as finalidades descritas ou quando você retirar seu consentimento.</li>
-            <li>Portabilidade: Solicitar que seus dados sejam transferidos para outro prestador de serviços, quando aplicável.</li>
-          </ul>
-          <p>Para exercer qualquer um desses direitos, entre em contato com nosso Encarregado de Proteção de Dados Pessoais, conforme descrito na seção 9.</p>
-        </div>
+  <h2>4. Base legal para o tratamento</h2>
+  <p>Tratamos seus dados com base nas seguintes hipóteses legais previstas na LGPD:</p>
+  <ul>
+    <li><strong>Consentimento</strong> — para envio de comunicações de marketing</li>
+    <li><strong>Execução de contrato</strong> — para clientes e parceiros com contrato ativo</li>
+    <li><strong>Legítimo interesse</strong> — para comunicações B2B iniciais e melhoria de serviços</li>
+    <li><strong>Cumprimento de obrigação legal</strong> — quando exigido por lei ou regulação</li>
+  </ul>
 
-        <div class="policy-section">
-          <h2>5. Bases Legais para o Tratamento de Dados</h2>
-          <p>A Linkmedia trata os dados pessoais de acordo com as bases legais previstas na LGPD. As principais são:</p>
-          <ul>
-            <li>Consentimento: Coletamos dados com seu consentimento expresso, como no momento do cadastro.</li>
-            <li>Execução de Contrato: Tratamos dados necessários para fornecer os serviços contratados.</li>
-            <li>Interesses Legítimos: Podemos tratar dados em casos em que nossos interesses legítimos não prevaleçam sobre seus direitos e liberdades.</li>
-          </ul>
-        </div>
+  <h2>5. Compartilhamento de dados</h2>
+  <p>A Linkmedia <strong>não vende dados pessoais</strong> a terceiros. Podemos compartilhar dados nas seguintes situações:</p>
+  <ul>
+    <li><strong>Fornecedores e parceiros tecnológicos</strong> que prestam serviços em nosso nome (CRM, plataformas de e-mail, infraestrutura de nuvem), sempre vinculados contratualmente às mesmas obrigações de proteção de dados</li>
+    <li><strong>Autoridades competentes</strong> quando exigido por lei, ordem judicial ou regulação</li>
+    <li><strong>Operações societárias</strong> como fusões ou aquisições, com notificação prévia aos titulares</li>
+  </ul>
 
-        <div class="policy-section">
-          <h2>6. Cookies e Tecnologias de Rastreamento</h2>
-          <p>Utilizamos cookies e tecnologias similares para melhorar a experiência de navegação e personalizar os serviços oferecidos. Você pode optar por desativar cookies através das configurações do seu navegador, embora isso possa afetar o funcionamento de certas funcionalidades da plataforma.</p>
-        </div>
+  <h2>6. Seus direitos como titular de dados</h2>
+  <p>Nos termos da LGPD, você tem direito a:</p>
+  <ul>
+    <li>Confirmar a existência de tratamento dos seus dados</li>
+    <li>Acessar os dados que temos sobre você</li>
+    <li>Corrigir dados incompletos, inexatos ou desatualizados</li>
+    <li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários</li>
+    <li>Revogar o consentimento a qualquer momento</li>
+    <li>Opor-se ao tratamento baseado em legítimo interesse</li>
+    <li>Solicitar a portabilidade dos seus dados</li>
+    <li>Ser informado sobre com quem seus dados foram compartilhados</li>
+  </ul>
+  <p>Para exercer qualquer desses direitos, entre em contato pelo WhatsApp <a href="https://wa.me/5511995106127">+55 11 99510-6127</a> ou pelo site <a href="https://linkmedia.com.br">linkmedia.com.br</a>.</p>
 
-        <div class="policy-section">
-          <h2>7. Alterações nesta Política de Privacidade</h2>
-          <p>Podemos atualizar esta Política de Privacidade de tempos em tempos, para refletir mudanças em nossos serviços ou conforme exigido pela legislação aplicável. Quaisquer alterações significativas serão comunicadas aos usuários por meio de notificação em nossa plataforma.</p>
-        </div>
+  <h2>7. Retenção de dados</h2>
+  <p>Mantemos seus dados pelo tempo necessário para as finalidades descritas nesta política, respeitando os prazos legais aplicáveis. Dados de leads não convertidos são anonimizados após 24 meses de inatividade. Dados contratuais são mantidos pelo prazo legal de 5 anos após o encerramento do contrato.</p>
 
-        <div class="policy-section">
-          <h2>8. Restrições de Idade</h2>
-          <p>Nossos serviços são destinados a usuários maiores de 18 anos. Menores de idade podem utilizar a plataforma apenas com a supervisão e consentimento de pais ou responsáveis.</p>
-        </div>
+  <h2>8. Segurança</h2>
+  <p>Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados contra acesso não autorizado, perda acidental, alteração ou divulgação, incluindo criptografia em trânsito (TLS), controle de acesso por função, monitoramento de atividades e backups regulares em ambiente seguro.</p>
 
-        <div class="policy-section">
-          <h2>9. Como Entrar em Contato Conosco</h2>
-          <p>Para questões sobre esta Política de Privacidade ou para exercer seus direitos, entre em contato com nosso Encarregado de Proteção de Dados:</p>
-          <p>Encarregado de Proteção de Dados: Carlos Gomes</p>
-          <p>E-mail: privacidade@linkmedia.com.br</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <h2>9. Cookies</h2>
+  <p>Nosso site utiliza cookies essenciais para funcionamento e cookies analíticos para entender como os visitantes interagem com o conteúdo. Você pode configurar seu navegador para bloquear cookies, mas isso pode impactar algumas funcionalidades do site.</p>
 
-  <footer>
-    <div class="container">
-      <ul class="footer-links">
-        <li><a href="/politica-privacidade">Política de Privacidade</a></li>
-        <li><a href="/politica-anticorrupcao">Política Anticorrupção</a></li>
-        <li><a href="/termos-de-uso">Termos de Uso</a></li>
-        <li><a href="/contato">Contato</a></li>
-      </ul>
-      <p>&copy; 2023 Linkmedia. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+  <h2>10. Alterações nesta política</h2>
+  <p>Podemos atualizar esta política periodicamente. Alterações relevantes serão comunicadas pelo site. Recomendamos revisão periódica.</p>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+  <div class="contact-box">
+    <h3>Dúvidas sobre privacidade?</h3>
+    <p>Entre em contato com nosso encarregado de dados (DPO) pelo WhatsApp ou pelo formulário do site.</p>
+    <a href="https://wa.me/5511995106127?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20a%20Política%20de%20Privacidade%20da%20Linkmedia." target="_blank" class="btn">Falar com o DPO →</a>
+  </div>
+</main>
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script>
+<footer>
+  <p>© 2026 <a href="/">Linkmedia Tecnologia</a> · <a href="/politica-privacidade.html">Privacidade</a> · <a href="/politica-anticorrupcao.html">Anticorrupção</a></p>
+</footer>
 </body>
 </html>

@@ -1,349 +1,150 @@
-<html><head><base href="https://linkmedia.com.br/politica-anticorrupcao">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política Anticorrupção - Linkmedia</title>
-<meta name="description" content="Conheça a política anticorrupção da Linkmedia. Nosso compromisso com a integridade, transparência e ética em todos os negócios e relações.">
+<title>Política Anticorrupção | Linkmedia Tecnologia</title>
+<meta name="description" content="Política Anticorrupção da Linkmedia Tecnologia. Nosso compromisso com a ética, integridade e conformidade com a Lei Anticorrupção brasileira (Lei nº 12.846/2013).">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://linkmedia.com.br/politica-anticorrupcao.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root {
-  --acquamarine: #3BD1D6;
-  --azul-linkmedia: #000E40;
-  --offwhite: #F1F2EE;
-  --branco: #FFFFFF;
-  --cobre: #B55635;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: var(--azul-linkmedia);
-  background-color: var(--offwhite);
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-header {
-  background-color: var(--branco);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 150px;
-  height: auto;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin-left: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--azul-linkmedia);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: var(--acquamarine);
-}
-
-.hero {
-  background: linear-gradient(135deg, var(--azul-linkmedia), var(--acquamarine));
-  color: var(--branco);
-  padding: 8rem 0 4rem;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.policy-content {
-  background-color: var(--branco);
-  padding: 4rem 0;
-}
-
-.policy-section {
-  margin-bottom: 2rem;
-}
-
-.policy-section h3 {
-  color: var(--azul-linkmedia);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.policy-section p, .policy-section ul, .policy-section ol {
-  margin-bottom: 1rem;
-}
-
-.policy-section ul, .policy-section ol {
-  padding-left: 2rem;
-}
-
-.policy-section strong {
-  font-weight: bold;
-}
-
-footer {
-  background-color: var(--azul-linkmedia);
-  color: var(--branco);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-.footer-links li {
-  margin: 0 1rem;
-}
-
-.footer-links a {
-  color: var(--branco);
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--azul-linkmedia);
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--branco);
-    flex-direction: column;
-    padding: 1rem 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 0.5rem 0;
-  }
-}
+:root{--bg:#040810;--surface:#080f1e;--card:#0c1428;--border:#1a2540;--cyan:#00d2d3;--blue:#1e56d9;--text:#e8edf8;--muted:#7a8aaa;--grad:linear-gradient(135deg,#00d2d3,#1e56d9);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.75;}
+a{color:var(--cyan);}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(4,8,16,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;}
+.topbar-logo{font-size:18px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;}
+.topbar-back{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s;}
+.topbar-back:hover{color:var(--text);}
+.hero{margin-top:64px;padding:56px 32px 40px;background:linear-gradient(180deg,#0a1428,var(--bg));border-bottom:1px solid var(--border);text-align:center;}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(0,210,211,.1);color:var(--cyan);border:1px solid rgba(0,210,211,.2);border-radius:20px;padding:4px 14px;margin-bottom:16px;}
+.hero h1{font-size:clamp(24px,4vw,40px);font-weight:800;margin-bottom:10px;}
+.hero p{color:var(--muted);font-size:14px;}
+.content{max-width:760px;margin:0 auto;padding:56px 32px 80px;}
+.content h2{font-size:20px;font-weight:800;margin:40px 0 12px;padding-top:40px;border-top:1px solid var(--border);}
+.content h2:first-child{border-top:none;margin-top:0;padding-top:0;}
+.content h3{font-size:16px;font-weight:700;margin:24px 0 8px;color:var(--text);}
+.content p{margin-bottom:16px;color:#c8d4e8;}
+.content ul{margin:0 0 20px 24px;color:#c8d4e8;}
+.content li{margin-bottom:6px;}
+.content strong{color:var(--text);font-weight:700;}
+.update{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:40px;font-size:13px;color:var(--muted);}
+.principle-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;}
+@media(max-width:600px){.principle-grid{grid-template-columns:1fr;}}
+.principle-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;}
+.principle-card .icon{font-size:24px;margin-bottom:10px;}
+.principle-card h4{font-size:14px;font-weight:700;margin-bottom:6px;}
+.principle-card p{font-size:13px;color:var(--muted);margin:0;}
+.contact-box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin-top:48px;text-align:center;}
+.contact-box h3{font-size:18px;font-weight:800;margin-bottom:10px;}
+.contact-box p{color:var(--muted);font-size:14px;margin-bottom:20px;}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:8px;text-decoration:none;transition:opacity .2s;}
+.btn:hover{opacity:.85;}
+footer{border-top:1px solid var(--border);padding:32px;text-align:center;font-size:13px;color:var(--muted);}
+footer a{color:var(--muted);}
+footer a:hover{color:var(--cyan);}
 </style>
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <div class="logo">
-        <img src="/a/8273b58b-249e-4c74-8cc4-6d1f02177609.png" alt="Linkmedia Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/sobre">Sobre Nós</a></li>
-        <li><a href="/solucoes">Soluções</a></li>
-        <li><a href="/casos-de-sucesso">Casos de Sucesso</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contato">Contato</a></li>
-      </ul>
-      <button class="menu-toggle">&#9776;</button>
-    </nav>
-  </header>
+<nav class="topbar">
+  <a href="/" class="topbar-logo">Linkmedia</a>
+  <a href="/" class="topbar-back">← Voltar ao site</a>
+</nav>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Política Anticorrupção</h1>
-        <p>Compromisso com a integridade, transparência e ética em todos os negócios e relações</p>
-      </div>
-    </section>
+<header class="hero">
+  <span class="tag">Documentos Legais</span>
+  <h1>Política Anticorrupção</h1>
+  <p>Linkmedia Tecnologia · Lei nº 12.846/2013 · Última atualização: março de 2026</p>
+</header>
 
-    <section class="policy-content">
-      <div class="container">
-        <div class="policy-section">
-          <h3>1. INTRODUÇÃO</h3>
-          <p>Esta Política de combate à lavagem de dinheiro/financiamento do terrorismo/política anticorrupção aplica-se a todos os sócios, colaboradores, terceirizados, representantes e prestadores de serviços que atuem em nome da <strong>Linkmedia</strong>.</p>
-          <p>Nesse sentido, todos os mencionados devem assegurar o perfeito entendimento das leis, princípios e normas de conduta aplicáveis à empresa.</p>
-          <p>Esta Política foi inspirada nas recomendações do Grupo de Ação Financeira (GAFI), adotadas por mais de 180 países, sendo reconhecidas universalmente como o padrão internacional de prevenção à lavagem de dinheiro e combate ao financiamento do terrorismo ("PLD/CFT").</p>
-        </div>
+<main class="content">
+  <div class="update">
+    <strong>Última atualização:</strong> 12 de março de 2026. Esta política substitui todas as versões anteriores e se aplica a todos os colaboradores, prestadores e parceiros da Linkmedia.
+  </div>
 
-        <div class="policy-section">
-          <h3>2. OBJETIVOS</h3>
-          <p>A presente Política tem o intuito de estabelecer as diretrizes de PLD/CFT dentro das atividades desenvolvidas pela <strong>Linkmedia</strong>, em conformidade com as exigências legais e regulatórias locais, visando evitar que seus membros se envolvam em atividades ilícitas e antiéticas relacionadas a crimes financeiros, tais como lavagem de dinheiro para atividades criminosas ou financiamento de ações terroristas.</p>
-        </div>
+  <h2>1. Compromisso com a integridade</h2>
+  <p>A <strong>Linkmedia Tecnologia</strong> tem como valor fundamental a atuação ética, íntegra e transparente em todas as suas relações comerciais, com clientes, parceiros, fornecedores, colaboradores e órgãos públicos. Esta Política Anticorrupção estabelece as diretrizes que regem nossa conduta e reflete nosso compromisso com o cumprimento da <strong>Lei Anticorrupção brasileira (Lei nº 12.846/2013)</strong> e demais legislações aplicáveis.</p>
 
-        <div class="policy-section">
-          <h3>3. AMBIENTE REGULATÓRIO</h3>
-          <p>Com base na Lei Federal nº 12.846, de 1º de agosto de 2013, conhecida como "Lei Anticorrupção", a <strong>Linkmedia</strong> desenvolveu e melhorou seus procedimentos operacionais para torná-los adequados às regras atuais e às suas atividades, com o objetivo de garantir a maior proteção ao seu patrimônio.</p>
-          <p>A Lei Anticorrupção prevê que as pessoas jurídicas serão responsabilizadas objetivamente, nos âmbitos administrativo e civil, por atos lesivos praticados contra a administração pública, nacional ou estrangeira. A <strong>Linkmedia</strong> elaborou esta Política Anticorrupção para garantir que suas atividades sejam conduzidas com os mais elevados padrões de ética, integridade, transparência e respeito.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>4. CONCEITO DE LAVAGEM DE DINHEIRO</h3>
-          <p>O crime de lavagem de dinheiro caracteriza-se por um conjunto de operações comerciais ou financeiras que buscam integrar recursos, bens e valores de origem ilícita na economia, de forma transitória ou permanente. Essas operações se desenvolvem em três fases:</p>
-          <p><strong>a) Colocação:</strong> Primeira etapa, que consiste na introdução do dinheiro no sistema econômico, geralmente em países com regras permissivas. Isso pode ocorrer por meio de depósitos, compra de bens ou fracionamento de valores.</p>
-          <p><strong>b) Ocultação:</strong> Busca-se dificultar o rastreamento contábil dos recursos ilícitos, com a transferência de ativos para contas anônimas ou empresas de fachada.</p>
-          <p><strong>c) Integração:</strong> Fase em que os ativos são formalmente incorporados ao sistema econômico, com investimentos em empreendimentos que ajudam a legitimar o dinheiro ilegal.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>5. POLÍTICA DE COMBATE</h3>
-          <p>Qualquer suspeita de operações financeiras ou não-financeiras que possam envolver atividades ilícitas na <strong>Linkmedia</strong>, seus parceiros, clientes ou membros deve ser imediatamente comunicada por meio do canal de denúncia da empresa.</p>
-          <p>Cada caso será analisado e poderá resultar em desligamento, demissão por justa causa, ou rescisão contratual, sem prejuízo das consequências legais cabíveis.</p>
-          <p>A <strong>Linkmedia</strong> monitorará o cumprimento desta política, identificando pessoas politicamente expostas (PPEs), conforme definido na Instrução CVM 301/1999, e fiscalizando com rigor transações com essas pessoas.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>6. ACOMPANHAMENTO DA POLÍTICA DE PLD/CFT</h3>
-          <p>Em linha com seu compromisso de cooperação, a <strong>Linkmedia</strong> revisará periodicamente suas políticas de PLD/CFT para garantir que todos adotem regras e controles internacionalmente aceitos e recomendados pelo GAFI.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>7. CONDUTAS PROIBIDAS PELA POLÍTICA ANTICORRUPÇÃO</h3>
-          <p>Todos os membros da <strong>Linkmedia</strong>, parceiros e contratantes devem observar e cumprir os termos desta Política. As condutas proibidas incluem, mas não se limitam a:</p>
-          <ol>
-            <li>Prometer, oferecer ou dar vantagem indevida a Agente Público.</li>
-            <li>Financiar ou subvencionar a prática de atos ilícitos.</li>
-            <li>Dificultar investigações ou fiscalizações por órgãos públicos.</li>
-          </ol>
-          <p>Em relação a licitações, é proibido:</p>
-          <ol>
-            <li>Frustrar ou fraudar o caráter competitivo de procedimentos licitatórios.</li>
-            <li>Impedir ou fraudar a realização de qualquer ato de procedimento licitatório.</li>
-            <li>Fraudar contratos ou obter vantagens indevidas.</li>
-          </ol>
-        </div>
-
-        <div class="policy-section">
-          <h3>8. PAGAMENTOS DE FACILITAÇÃO</h3>
-          <p>A <strong>Linkmedia</strong> proíbe qualquer tipo de Pagamento de Facilitação, entendido como quantias de dinheiro ou promessas de outras vantagens para acelerar processos, seja judicial ou extrajudicial.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>9. DUE DILIGENCE DE PARCEIROS</h3>
-          <p>Antes de contratar parceiros ou clientes, a <strong>Linkmedia</strong> realizará Due Diligence para avaliar antecedentes, reputação e cumprimento das leis anticorrupção.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>10. SINAIS DE ALERTA ("RED FLAGS")</h3>
-          <p>Os colaboradores da <strong>Linkmedia</strong> devem estar atentos a sinais de alerta que possam indicar vantagens ou pagamentos indevidos. Esses sinais incluem:</p>
-          <ul>
-            <li>Contraparte com reputação por envolvimento em corrupção.</li>
-            <li>Exigência de comissões excessivas.</li>
-            <li>Operações financeiras fora dos padrões usuais.</li>
-          </ul>
-        </div>
-
-        <div class="policy-section">
-          <h3>11. SANÇÕES AOS COLABORADORES</h3>
-          <p>Esta Política é parte integrante das regras que regem a relação de trabalho dos colaboradores da <strong>Linkmedia</strong>. Infrações serão consideradas violação contratual, sujeitas a penalidades como advertência, suspensão ou demissão por justa causa, além das medidas legais cabíveis.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>12. SANÇÕES AOS PARCEIROS</h3>
-          <p>Os parceiros da <strong>Linkmedia</strong> devem respeitar os termos desta Política. Qualquer violação poderá resultar na rescisão unilateral do contrato, além de possíveis ações legais para indenização por danos.</p>
-        </div>
-
-        <div class="policy-section">
-          <h3>13. DISPOSIÇÕES GERAIS</h3>
-          <p>Todos os sócios e colaboradores da <strong>Linkmedia</strong> vinculam-se a esta Política a partir da assinatura do Termo de Adesão. A presente Política entra em vigor a partir de sua publicação e tem validade indeterminada.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <ul class="footer-links">
-        <li><a href="/politica-privacidade">Política de Privacidade</a></li>
-        <li><a href="/politica-anticorrupcao">Política Anticorrupção</a></li>
-        <li><a href="/termos-de-uso">Termos de Uso</a></li>
-        <li><a href="/contato">Contato</a></li>
-      </ul>
-      <p>&copy; 2023 Linkmedia. Todos os direitos reservados.</p>
+  <h2>2. Princípios que nos guiam</h2>
+  <div class="principle-grid">
+    <div class="principle-card">
+      <div class="icon">⚖️</div>
+      <h4>Legalidade</h4>
+      <p>Cumprimos rigorosamente todas as leis, regulações e normas aplicáveis aos nossos negócios no Brasil.</p>
     </div>
-  </footer>
+    <div class="principle-card">
+      <div class="icon">🔍</div>
+      <h4>Transparência</h4>
+      <p>Mantemos registros precisos e completos de todas as transações financeiras e relações comerciais.</p>
+    </div>
+    <div class="principle-card">
+      <div class="icon">🤝</div>
+      <h4>Integridade</h4>
+      <p>Competimos com base em mérito, qualidade e valor — nunca por meio de vantagens indevidas.</p>
+    </div>
+    <div class="principle-card">
+      <div class="icon">🛡️</div>
+      <h4>Responsabilidade</h4>
+      <p>Cada colaborador e parceiro é responsável por conhecer e cumprir esta política.</p>
+    </div>
+  </div>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+  <h2>3. Condutas proibidas</h2>
+  <p>É expressamente <strong>proibido</strong> a qualquer colaborador, prestador de serviço ou parceiro da Linkmedia:</p>
+  <ul>
+    <li>Oferecer, prometer, dar ou autorizar o pagamento de propina, suborno ou qualquer vantagem indevida a agentes públicos ou privados</li>
+    <li>Solicitar ou receber vantagem indevida em troca de favores comerciais</li>
+    <li>Manipular processos licitatórios ou de contratação pública</li>
+    <li>Utilizar intermediários ou terceiros para contornar esta política</li>
+    <li>Fazer doações a partidos políticos ou campanhas eleitorais em nome da empresa</li>
+    <li>Registrar falsamente transações nos livros contábeis da empresa</li>
+    <li>Oferecer presentes, brindes ou hospitalidades que possam influenciar indevidamente decisões de negócios</li>
+  </ul>
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
+  <h2>4. Presentes, hospitalidades e despesas de representação</h2>
+  <p>A Linkmedia admite presentes e hospitalidades desde que:</p>
+  <ul>
+    <li>Sejam de valor modesto e não recorrentes</li>
+    <li>Não criem expectativa de benefício ou obrigação para o receptor</li>
+    <li>Sejam consistentes com práticas comerciais legítimas e transparentes</li>
+    <li>Não sejam oferecidos a agentes públicos, salvo em conformidade estrita com a legislação</li>
+  </ul>
+  <p>Despesas de representação (refeições, eventos) devem ser razoáveis, devidamente documentadas e aprovadas pela liderança.</p>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script>
+  <h2>5. Relações com o setor público</h2>
+  <p>Nas interações com agentes públicos — em processos de licitação, licenciamento, fiscalização ou qualquer outra relação com o poder público — a Linkmedia exige conduta de máxima transparência. Toda e qualquer solicitação incomum de um agente público deve ser reportada imediatamente à liderança da empresa.</p>
+
+  <h2>6. Due diligence de parceiros e fornecedores</h2>
+  <p>A Linkmedia adota procedimentos de avaliação de integridade (<em>due diligence</em>) para novos parceiros, fornecedores e representantes comerciais. Parceiros que atuem em nosso nome estão sujeitos às mesmas exigências desta política e devem assinar termo de compromisso com os princípios anticorrupção.</p>
+
+  <h2>7. Canal de denúncia</h2>
+  <p>Qualquer colaborador, cliente ou parceiro que tiver conhecimento de conduta suspeita ou violação desta política deve comunicar imediatamente à liderança da Linkmedia. Garantimos sigilo à identidade do denunciante e ausência de qualquer retaliação por relatos de boa-fé.</p>
+
+  <h2>8. Consequências das violações</h2>
+  <p>Violações desta política sujeitam o infrator a:</p>
+  <ul>
+    <li>Medidas disciplinares internas, incluindo rescisão contratual</li>
+    <li>Responsabilização civil e criminal nos termos da legislação brasileira</li>
+    <li>Rescisão imediata de contratos comerciais, no caso de parceiros e fornecedores</li>
+  </ul>
+
+  <h2>9. Treinamento e cultura de integridade</h2>
+  <p>A Linkmedia promove treinamentos periódicos sobre ética e compliance para seus colaboradores e incentiva uma cultura organizacional onde a integridade é valor inegociável — não apenas uma obrigação legal.</p>
+
+  <h2>10. Vigência e revisão</h2>
+  <p>Esta política entra em vigor na data de sua publicação e será revisada anualmente ou sempre que houver mudanças relevantes na legislação ou nas práticas de negócio da empresa.</p>
+
+  <div class="contact-box">
+    <h3>Dúvidas ou denúncias?</h3>
+    <p>Entre em contato com nossa liderança pelo WhatsApp ou pelo site. Garantimos sigilo e ausência de retaliação.</p>
+    <a href="https://wa.me/5511995106127?text=Olá!%20Preciso%20falar%20sobre%20a%20Política%20Anticorrupção%20da%20Linkmedia." target="_blank" class="btn">Entrar em contato →</a>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 <a href="/">Linkmedia Tecnologia</a> · <a href="/politica-privacidade.html">Privacidade</a> · <a href="/politica-anticorrupcao.html">Anticorrupção</a></p>
+</footer>
 </body>
 </html>
