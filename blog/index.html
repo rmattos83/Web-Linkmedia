@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Linkmedia — Conteúdo sobre Transformação Digital B2B</title>
+<meta name="description" content="Guias práticos, dados de mercado e tendências sobre Digital Signage, Gestão de Atendimento, Agentes de IA e experiência do cliente para saúde, varejo, educação e corporativo.">
+<meta name="keywords" content="blog transformação digital, digital signage, gestão de atendimento, agentes IA, experiência do cliente, Linkmedia">
+<meta name="author" content="Linkmedia Tecnologia">
+<link rel="canonical" href="https://linkmedia.com.br/blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog Linkmedia — Transformação Digital B2B">
+<meta property="og:description" content="Guias práticos e tendências sobre Digital Signage, Gestão de Atendimento e Agentes de IA para saúde, varejo, educação e corporativo.">
+<meta property="og:url" content="https://linkmedia.com.br/blog">
+<meta property="og:site_name" content="Linkmedia Tecnologia">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog Linkmedia",
+  "description": "Guias práticos, dados de mercado e tendências sobre transformação digital B2B",
+  "url": "https://linkmedia.com.br/blog",
+  "publisher": { "@type": "Organization", "name": "Linkmedia Tecnologia", "url": "https://linkmedia.com.br" },
+  "inLanguage": "pt-BR"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #040810;
+  --surface: #080f1e;
+  --card: #0c1428;
+  --border: #1a2540;
+  --cyan: #00d2d3;
+  --blue: #1e56d9;
+  --blue2: #3b82f6;
+  --text: #e8edf8;
+  --muted: #7a8aaa;
+  --grad: linear-gradient(135deg, #00d2d3 0%, #1e56d9 100%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+a { color: var(--cyan); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* NAV */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(4,8,16,.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 32px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px;
+}
+.topbar-logo { font-size: 18px; font-weight: 800; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; white-space: nowrap; }
+.topbar-nav { display: flex; align-items: center; gap: 24px; }
+.topbar-nav a { font-size: 13px; color: var(--muted); transition: color .2s; }
+.topbar-nav a:hover { color: var(--text); text-decoration: none; }
+.topbar-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--grad); color: #fff; font-size: 13px; font-weight: 700;
+  padding: 8px 18px; border-radius: 8px; white-space: nowrap;
+  transition: opacity .2s;
+}
+.topbar-cta:hover { opacity: .85; text-decoration: none; }
+@media (max-width: 640px) { .topbar-nav { display: none; } }
+
+/* HERO */
+.blog-hero {
+  margin-top: 64px;
+  padding: 72px 32px 56px;
+  text-align: center;
+  background: linear-gradient(180deg, #0a1428 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}
+.blog-hero::before {
+  content: '';
+  position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
+  width: 700px; height: 350px;
+  background: radial-gradient(ellipse, rgba(0,210,211,.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.blog-label {
+  display: inline-block;
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  background: rgba(0,210,211,.12); color: var(--cyan);
+  border: 1px solid rgba(0,210,211,.25); border-radius: 20px;
+  padding: 4px 14px; margin-bottom: 20px;
+}
+.blog-hero h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 800; line-height: 1.15;
+  max-width: 700px; margin: 0 auto 16px;
+}
+.grad-text { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.blog-hero p {
+  font-size: 18px; color: var(--muted);
+  max-width: 540px; margin: 0 auto;
+}
+
+/* FILTROS */
+.filter-bar {
+  max-width: 1100px; margin: 0 auto;
+  padding: 40px 32px 0;
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.filter-btn {
+  font-size: 13px; font-weight: 600;
+  padding: 7px 18px; border-radius: 99px;
+  border: 1px solid var(--border);
+  background: transparent; color: var(--muted);
+  cursor: pointer; transition: all .2s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.filter-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+.filter-btn.active {
+  background: var(--grad); color: #fff;
+  border-color: transparent;
+}
+
+/* GRID */
+.blog-wrap {
+  max-width: 1100px; margin: 0 auto;
+  padding: 32px 32px 80px;
+}
+
+/* DESTAQUE — 1 artigo grande */
+.featured-card {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden;
+  margin-bottom: 32px;
+  text-decoration: none; color: inherit;
+  transition: transform .2s, box-shadow .2s;
+}
+.featured-card:hover { transform: translateY(-3px); box-shadow: 0 20px 60px rgba(0,0,0,.5); text-decoration: none; }
+@media (max-width: 700px) { .featured-card { grid-template-columns: 1fr; } }
+.featured-img {
+  min-height: 260px;
+  background: linear-gradient(135deg, #0a1428 0%, #0c1e3a 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 80px;
+  border-right: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}
+.featured-img::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,210,211,.08) 0%, transparent 70%);
+}
+@media (max-width: 700px) { .featured-img { border-right: none; border-bottom: 1px solid var(--border); min-height: 180px; } }
+.featured-body { padding: 36px 32px; display: flex; flex-direction: column; justify-content: center; }
+.featured-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 16px;
+}
+.featured-badge span { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); }
+.featured-body h2 { font-size: 22px; font-weight: 800; line-height: 1.25; margin-bottom: 14px; }
+.featured-body p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 24px; }
+.featured-meta { font-size: 12px; color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+.read-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 700; color: var(--cyan);
+  transition: gap .2s;
+}
+.featured-card:hover .read-link { gap: 12px; }
+
+/* GRID DE CARDS */
+.cards-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 860px) { .cards-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .cards-grid { grid-template-columns: 1fr; } }
+
+.article-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden;
+  text-decoration: none; color: inherit;
+  transition: transform .2s, box-shadow .2s;
+  display: flex; flex-direction: column;
+}
+.article-card:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(0,0,0,.4); text-decoration: none; }
+.article-card.coming-soon { opacity: .5; cursor: default; pointer-events: none; }
+
+.card-img {
+  height: 140px;
+  background: linear-gradient(135deg, #080f1e 0%, #0c1e3a 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 44px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.card-soon-badge {
+  position: absolute; top: 12px; right: 12px;
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em;
+  background: rgba(122,138,170,.15); color: var(--muted);
+  border: 1px solid var(--border); border-radius: 20px;
+  padding: 3px 10px;
+}
+.card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.card-cat {
+  font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--cyan); margin-bottom: 10px;
+}
+.card-body h3 { font-size: 15px; font-weight: 700; line-height: 1.35; margin-bottom: 10px; flex: 1; }
+.card-body p { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+.card-meta { font-size: 12px; color: var(--muted); display: flex; gap: 12px; margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border); }
+
+/* SEÇÃO NEWSLETTER */
+.newsletter-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 64px 32px;
+  text-align: center;
+}
+.newsletter-inner { max-width: 520px; margin: 0 auto; }
+.newsletter-inner h2 { font-size: 26px; font-weight: 800; margin-bottom: 12px; }
+.newsletter-inner p { font-size: 15px; color: var(--muted); margin-bottom: 28px; }
+.newsletter-cta {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--grad); color: #fff;
+  font-size: 15px; font-weight: 700;
+  padding: 14px 28px; border-radius: 10px;
+  text-decoration: none; transition: opacity .2s;
+}
+.newsletter-cta:hover { opacity: .85; text-decoration: none; }
+
+/* FOOTER */
+.blog-footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 32px;
+  text-align: center;
+  color: var(--muted); font-size: 13px;
+}
+.blog-footer a { color: var(--muted); }
+.blog-footer a:hover { color: var(--cyan); }
+
+/* HIDDEN */
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<nav class="topbar" role="navigation" aria-label="Navegação Linkmedia">
+  <a href="https://linkmedia.com.br" class="topbar-logo">Linkmedia</a>
+  <div class="topbar-nav">
+    <a href="https://linkmedia.com.br/#solucoes">Soluções</a>
+    <a href="https://linkmedia.com.br/#verticais">Verticais</a>
+    <a href="https://linkmedia.com.br/blog">Blog</a>
+    <a href="https://linkmedia.com.br/#contato">Contato</a>
+  </div>
+  <a href="https://wa.me/5511995106127?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20soluções%20da%20Linkmedia." target="_blank" rel="noopener" class="topbar-cta">Falar com especialista →</a>
+</nav>
+
+<header class="blog-hero" role="banner">
+  <span class="blog-label">Conteúdo & Tendências</span>
+  <h1>Insights para quem lidera a <span class="grad-text">transformação digital.</span></h1>
+  <p>Guias práticos, dados de mercado e cases reais para gestores de saúde, varejo, educação e corporativo.</p>
+</header>
+
+<div class="filter-bar" role="navigation" aria-label="Filtro por categoria">
+  <button class="filter-btn active" data-filter="todos">Todos</button>
+  <button class="filter-btn" data-filter="saude">🏥 Saúde</button>
+  <button class="filter-btn" data-filter="varejo">🛒 Varejo</button>
+  <button class="filter-btn" data-filter="corporativo">🏢 Corporativo</button>
+  <button class="filter-btn" data-filter="educacao">🎓 Educação</button>
+</div>
+
+<main class="blog-wrap" role="main">
+
+  <!-- DESTAQUE -->
+  <a href="./artigo-totem-autoatendimento-clinicas.html" class="featured-card" data-vertical="saude" aria-label="Leia o artigo em destaque: Totem de Autoatendimento para Clínicas">
+    <div class="featured-img">🖥️</div>
+    <div class="featured-body">
+      <div class="featured-badge"><span></span>Destaque · Saúde Digital</div>
+      <h2>Totem de Autoatendimento para Clínicas: Vale a Pena em 2026?</h2>
+      <p>A resposta honesta — com dados, prós e contras reais, tabela de quando compensa por porte de clínica e checklist completo para avaliar fornecedores.</p>
+      <div class="featured-meta">
+        <span>📅 Março de 2026</span>
+        <span>⏱ 9 min de leitura</span>
+      </div>
+      <span class="read-link">Ler artigo completo →</span>
+    </div>
+  </a>
+
+  <!-- GRID DE ARTIGOS -->
+  <div class="cards-grid" id="cards-grid">
+
+    <a href="./artigo-gestao-filas-clinicas.html" class="article-card" data-vertical="saude" aria-label="Gestão de Filas em Clínicas e Hospitais">
+      <div class="card-img">🏥</div>
+      <div class="card-body">
+        <div class="card-cat">Saúde Digital</div>
+        <h3>Gestão de Filas em Clínicas e Hospitais: Guia Completo 2026</h3>
+        <p>Como reduzir o tempo de espera percebido, liberar a recepção e transformar a experiência do paciente sem CAPEX.</p>
+        <div class="card-meta"><span>📅 Mar 2026</span><span>⏱ 8 min</span></div>
+      </div>
+    </a>
+
+    <a href="./artigo-digital-signage-varejo.html" class="article-card" data-vertical="varejo" aria-label="Digital Signage no Varejo">
+      <div class="card-img">📡</div>
+      <div class="card-body">
+        <div class="card-cat">DOOH & Retail Media</div>
+        <h3>Digital Signage no Varejo: Da Tela à Receita</h3>
+        <p>Como supermercados e redes de lojas transformam telas digitais em veículos de Retail Media Network e receita extra.</p>
+        <div class="card-meta"><span>📅 Mar 2026</span><span>⏱ 10 min</span></div>
+      </div>
+    </a>
+
+    <a href="./artigo-agentes-ia-atendimento.html" class="article-card" data-vertical="corporativo" aria-label="Agentes de IA no Atendimento B2B">
+      <div class="card-img">🤖</div>
+      <div class="card-body">
+        <div class="card-cat">Inteligência Artificial</div>
+        <h3>Agentes de IA no Atendimento B2B: Guia Definitivo 2026</h3>
+        <p>Como empresas de saúde, varejo e educação automatizam o atendimento via WhatsApp, chat e voz sem substituir a equipe.</p>
+        <div class="card-meta"><span>📅 Mar 2026</span><span>⏱ 11 min</span></div>
+      </div>
+    </a>
+
+    <!-- EM BREVE: SAÚDE -->
+    <div class="article-card coming-soon" data-vertical="saude">
+      <div class="card-img">📺<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Saúde Digital</div>
+        <h3>Telas Digitais na Sala de Espera: Como Reduzir a Percepção de Espera</h3>
+        <p>Por que o paciente que vê informação espera de forma completamente diferente.</p>
+        <div class="card-meta"><span>🏥 Linkmedia Health</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="saude">
+      <div class="card-img">💬<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Saúde Digital</div>
+        <h3>Agente de IA no WhatsApp para Agendamento de Consultas Médicas</h3>
+        <p>Como clínicas reduzem em 60% as chamadas de voz com automação inteligente.</p>
+        <div class="card-meta"><span>🏥 Linkmedia Health</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="saude">
+      <div class="card-img">🎵<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Saúde Digital</div>
+        <h3>Rádio Indoor para Ambientes de Saúde: Humanizando a Espera</h3>
+        <p>O impacto da comunicação sonora na experiência do paciente e no clima da equipe.</p>
+        <div class="card-meta"><span>🏥 Linkmedia Health</span></div>
+      </div>
+    </div>
+
+    <!-- EM BREVE: VAREJO -->
+    <div class="article-card coming-soon" data-vertical="varejo">
+      <div class="card-img">💰<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Retail Media</div>
+        <h3>Como Supermercados Faturam com Retail Media nas Telas da Loja</h3>
+        <p>A nova fonte de receita que transforma o ponto de venda em veículo de mídia.</p>
+        <div class="card-meta"><span>🛒 Varejo</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="varejo">
+      <div class="card-img">🍽️<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Varejo</div>
+        <h3>Cardápio Digital: Como Aumentar o Ticket Médio com Telas no PDV</h3>
+        <p>Por que redes de alimentação estão abandonando o cardápio impresso de vez.</p>
+        <div class="card-meta"><span>🛒 Varejo</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="varejo">
+      <div class="card-img">💊<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Varejo</div>
+        <h3>Sistema de Senha Eletrônica para Farmácias: Como Organizar o Fluxo</h3>
+        <p>Fila desorganizada gera conflito. Veja como resolver com tecnologia acessível.</p>
+        <div class="card-meta"><span>🛒 Varejo</span></div>
+      </div>
+    </div>
+
+    <!-- EM BREVE: CORPORATIVO -->
+    <div class="article-card coming-soon" data-vertical="corporativo">
+      <div class="card-img">📢<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Corporativo</div>
+        <h3>TV Corporativa para Comunicação Interna: Como Engajar Colaboradores</h3>
+        <p>Quando o comunicado vai para a tela da recepção, todo mundo lê.</p>
+        <div class="card-meta"><span>🏢 Corporativo</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="corporativo">
+      <div class="card-img">🚪<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Corporativo</div>
+        <h3>Totem Interativo para Recepção Corporativa: Modernize o Acesso</h3>
+        <p>Como prédios e condomínios comerciais estão automatizando o controle de visitantes.</p>
+        <div class="card-meta"><span>🏢 Corporativo</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="corporativo">
+      <div class="card-img">📊<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Analytics</div>
+        <h3>Analytics de Atendimento: Como Usar Dados para Reduzir Filas</h3>
+        <p>Dashboard em tempo real para gestores que tomam decisões baseadas em evidências.</p>
+        <div class="card-meta"><span>🏢 Corporativo</span></div>
+      </div>
+    </div>
+
+    <!-- EM BREVE: EDUCAÇÃO -->
+    <div class="article-card coming-soon" data-vertical="educacao">
+      <div class="card-img">🎓<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Educação</div>
+        <h3>Digital Signage em Escolas e Faculdades: Comunicação que os Alunos Leem</h3>
+        <p>Como substituir o mural de avisos que ninguém olha por telas que todo mundo vê.</p>
+        <div class="card-meta"><span>🎓 Educação</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="educacao">
+      <div class="card-img">📋<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Educação</div>
+        <h3>Gestão de Filas na Secretaria da Faculdade: Acabando com o Caos</h3>
+        <p>Na matrícula e no trancamento, a fila da secretaria vira pesadelo. Tem solução.</p>
+        <div class="card-meta"><span>🎓 Educação</span></div>
+      </div>
+    </div>
+
+    <div class="article-card coming-soon" data-vertical="educacao">
+      <div class="card-img">📱<span class="card-soon-badge">Em breve</span></div>
+      <div class="card-body">
+        <div class="card-cat">Educação</div>
+        <h3>Chatbot para Atendimento de Alunos no WhatsApp: Tire Dúvidas 24h</h3>
+        <p>Como IES estão respondendo automaticamente às mesmas 20 perguntas que lotam a secretaria.</p>
+        <div class="card-meta"><span>🎓 Educação</span></div>
+      </div>
+    </div>
+
+  </div><!-- /cards-grid -->
+</main>
+
+<section class="newsletter-section" aria-label="Fale com um especialista Linkmedia">
+  <div class="newsletter-inner">
+    <h2>Quer conteúdo direto no seu WhatsApp?</h2>
+    <p>Fale com um especialista e receba guias, cases e novidades sobre transformação digital no seu setor.</p>
+    <a href="https://wa.me/5511995106127?text=Olá!%20Quero%20receber%20conteúdos%20da%20Linkmedia%20e%20falar%20com%20um%20especialista." target="_blank" rel="noopener" class="newsletter-cta">Falar com especialista →</a>
+  </div>
+</section>
+
+<footer class="blog-footer" role="contentinfo">
+  <p>© 2026 <a href="https://linkmedia.com.br">Linkmedia Tecnologia</a> · <a href="https://linkmedia.com.br/politica-privacidade.html">Política de Privacidade</a> · WhatsApp: <a href="https://wa.me/5511995106127">+55 11 99510-6127</a></p>
+</footer>
+
+<script>
+const btns = document.querySelectorAll('.filter-btn');
+const featured = document.querySelector('.featured-card');
+const cards = document.querySelectorAll('#cards-grid .article-card');
+
+btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    btns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    // Destaque
+    if (filter === 'todos' || featured.dataset.vertical === filter) {
+      featured.style.display = '';
+    } else {
+      featured.style.display = 'none';
+    }
+
+    // Cards
+    cards.forEach(card => {
+      if (filter === 'todos' || card.dataset.vertical === filter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
